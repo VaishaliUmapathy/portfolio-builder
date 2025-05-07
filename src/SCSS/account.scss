@@ -1,0 +1,83 @@
+.account-container {
+
+    border-radius: 12px;
+    padding: 24px;
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #f9f6f8;
+    box-shadow: 0 8px 16px rgba(52, 86, 33, 0.05);
+  }
+  
+  .profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #2D3540;
+    }
+  
+    background-color: #77868C;
+    padding: 16px;
+    border-radius: 20px;
+  }
+  
+  .basic-information-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+  
+    .left,
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-width: 250px;
+    }
+  
+    label {
+      margin-top: 12px;
+      margin-bottom: 4px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #733456;
+    }
+  
+    input {
+      padding: 10px 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      transition: border 0.3s;
+  
+      &:focus {
+        border-color: #345621;
+        outline: none;
+      }
+    }
+  
+    button {
+      margin-top: 20px;
+      align-self: flex-start;
+      padding: 10px 20px;
+      background-color: #345621;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+  
+      &:hover {
+        background-color: #274b19;
+      }
+    }
+  }
+  

@@ -1,0 +1,204 @@
+.builder-page {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6fa;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+   margiN:3px;
+background-color: #733456;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #d9d9d9;
+      text-align: center;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        padding: 10px 15px;
+        margin: 10px 0;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.2s ease;
+    border-bottom: 2px solid #d9d9d9;
+        color: #dcdcdc;
+  
+        &:hover,
+        &.active {
+          background-color: #d7cfd7;
+            color: #2f3e46;
+          color: #21151d;
+        }
+      }
+    }
+ 
+      
+  }
+  .sidebar ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+  }
+  /* Main Form */
+  .builder-form {
+    flex: 1;
+    padding: 40px;
+    background-color: #ffffff;
+  
+    h1 {
+      color: #2f3e46;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      label {
+        margin: 10px 0 5px;
+        color: #3d3d3d;
+        font-weight: 600;
+      }
+  
+      input,
+      textarea {
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        margin-bottom: 15px;
+        font-size: 14px;
+        transition: border 0.3s ease;
+  
+        &:focus {
+          outline: none;
+          border-color: #5a8dee;
+          box-shadow: 0 0 0 2px rgba(90, 141, 238, 0.2);
+        }
+      }
+  
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+    }
+  
+    .action-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+  
+      .btn {
+        padding: 10px 20px;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+  
+        &.save {
+          background-color: #2d6a4f;
+          color: white;
+  
+          &:hover {
+            background-color: #1b4332;
+          }
+        }
+  
+        &.preview {
+          background-color: #0077b6;
+          color: white;
+  
+          &:hover {
+            background-color: #023e8a;
+          }
+        }
+  
+        &.publish {
+          background-color: #f77f00;
+          color: white;
+  
+          &:hover {
+            background-color: #d62828;
+          }
+        }
+      }
+    }
+  
+    .template-preview {
+      margin-top: 40px;
+      padding: 20px;
+      background: #f1f3f5;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  
+      h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #2f3e46;
+      }
+  
+      /* You can add nested styles for the preview content here */
+    }
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+   
+   
+    padding: 20px;
+    box-sizing: border-box;
+    .input-container{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    
+    }
+    label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input, textarea {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      
+      input {
+        width: calc(50% - 10px); /* Use half-width for social links */
+      }
+    }
+  
+   
+  
+    .form-footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  
