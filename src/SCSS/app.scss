@@ -1,4 +1,6 @@
-// src/SCSS/app.scss
+
+@use "sass:color";
+
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Inconsolata:wght@200..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poiret+One&display=swap");
 // Variables
 $primary-color: #733456;
@@ -7,7 +9,7 @@ $light-bg: #f2f2f2;
 $dark-text: #2d3540;
 $lite-white: #f9f9f9;
 
-$link-hover: darken($primary-color, 10%);
+$link-hover: color.adjust($primary-color, $lightness: -10%);
 
 body {
   margin: 0;
