@@ -1,5 +1,6 @@
 import { Routes, Route,useLocation } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import Navbar from '../portfolio-ibm/Navabar';
 import PrivateRoute from '../components/PrivateRoute';
