@@ -36,7 +36,7 @@ function App() {
     <>
     {!shouldHideNavbar && <Navbar />}
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" replace />} />  
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

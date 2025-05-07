@@ -9,7 +9,8 @@ import { ToastContainer } from 'react-toastify';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <React.StrictMode>
-    <BrowserRouter>
+  <BrowserRouter basename="/portfolio-builder">
+
       <App />
       <ToastContainer />
     </BrowserRouter>
