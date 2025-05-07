@@ -100,9 +100,7 @@ export default function PreviewPage() {
         alignItems: 'center',
       }}>
         <h2 style={{ fontSize: '1.8rem', color: '#333' }}>{template} Template</h2>
-        <button onClick={handlePublish}>
-          Publish Portfolio
-        </button>
+        
         <button
        onClick={handlePublish}
        disabled={isPublishing}
