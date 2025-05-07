@@ -1,6 +1,5 @@
 import { Routes, Route,useLocation } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
-import { Navigate } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import Navbar from '../portfolio-ibm/Navabar';
 import PrivateRoute from '../components/PrivateRoute';
@@ -37,7 +36,7 @@ function App() {
     <>
     {!shouldHideNavbar && <Navbar />}
       <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />  
+        <Route path="/home" element={<Home />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
