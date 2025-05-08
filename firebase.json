@@ -9,5 +9,20 @@
   },
   "storage": {
     "rules": "storage.rules"
+  },
+  "hosting": {
+    "public": "dist",  // Change this if your build folder has a different name (e.g., "build" for React)
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; connect-src 'self' https://firebase.googleapis.com https://firestore.googleapis.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://apis.google.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:;"
+          }
+        ]
+      }
+    ]
   }
 }

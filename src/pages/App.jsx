@@ -27,8 +27,6 @@ function App() {
     return () => unsubscribe();
   }, []);
   const location = useLocation();
-
-  // List of paths where the navbar should NOT appear
   const hideNavbarRoutes = ['/portfolio-view', '/portfolio-view/:userId'];
   const shouldHideNavbar = location.pathname.startsWith('/portfolio-view');
 
